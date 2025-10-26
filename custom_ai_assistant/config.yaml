@@ -1,0 +1,13 @@
+name: "Custom AI Assistant"
+version: "1.0"
+slug: "custom_ai_assistant"
+description: "Verbindet den Home Assistant-Assistenten mit deinem eigenen KI-Server."
+startup: application
+boot: auto
+homeassistant_api: true
+ingress: false
+host_network: true
+options:
+  server_url: "http://192.168.178.75:5000/process"
+schema:
+  server_url: str
